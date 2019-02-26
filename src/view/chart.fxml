@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.AreaChart?>
+<?import javafx.scene.chart.NumberAxis?>
+
+<AreaChart fx:id="chart" fx:controller="ChartController" xmlns:fx="http://javafx.com/fxml">
+        <xAxis>
+            <NumberAxis fx:id = "xAxis"/>
+        </xAxis>
+        <yAxis>
+            <NumberAxis fx:id = "yAxis"/>
+        </yAxis>
+</AreaChart>

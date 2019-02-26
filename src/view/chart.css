@@ -1,0 +1,5 @@
+.default-color0.chart-area-symbol { -fx-background-color: #ff0000, #ff0000; }
+.default-color1.chart-area-symbol { -fx-background-color: #0000ff, #0000ff; }
+
+.default-color0.chart-series-area-fill { -fx-fill: #ff000055; }
+.default-color1.chart-series-area-fill { -fx-fill: #0000ff55; }

@@ -1,0 +1,38 @@
+<?import javafx.scene.chart.AreaChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Label?>
+<BorderPane fx:controller="ChartController" xmlns:fx="http://javafx.com/fxml" prefHeight="800" prefWidth="1200">
+    <center>
+        <AreaChart fx:id = "chart">
+            <xAxis>
+                <NumberAxis fx:id = "xAxis"/>
+            </xAxis>
+            <yAxis>
+                <NumberAxis fx:id = "yAxis"/>
+            </yAxis>
+        </AreaChart>
+    </center>
+    <right>
+        <GridPane fx:controller="SwitchesController" vgap="10">
+            <Label text="a:" GridPane.rowIndex="0"/>
+            <Spinner fx:id = "aSpinner" GridPane.rowIndex="1"/>
+            <Label text="b:" GridPane.rowIndex="2"/>
+            <Spinner fx:id = "bSpinner" GridPane.rowIndex="3"/>
+            <Label text="c:" GridPane.rowIndex="4"/>
+            <Spinner fx:id = "cSpinner" GridPane.rowIndex="5"/>
+            <Label text="d:" GridPane.rowIndex="6"/>
+            <Spinner fx:id = "dSpinner" GridPane.rowIndex="7"/>
+            <Button fx:id = "resetButton" text="Reset" onAction="#onReset" GridPane.rowIndex="8" GridPane.halignment="CENTER"/>
+            <Label text="initial predator:" GridPane.rowIndex="9"/>
+            <Spinner fx:id = "predatorSpinner" GridPane.rowIndex="10"/>
+            <Label text="initial prey" GridPane.rowIndex="11"/>
+            <Spinner fx:id = "preySpinner" GridPane.rowIndex="12"/>
+            <Label text="step:" GridPane.rowIndex="13"/>
+            <Spinner fx:id = "stepSpinner" GridPane.rowIndex="14"/>
+        </GridPane>
+    </right>
+</BorderPane>
